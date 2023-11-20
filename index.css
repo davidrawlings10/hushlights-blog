@@ -1,0 +1,52 @@
+.content-container > a {
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  color: #ccc;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 0px #ccc;
+  padding: 5px 30px;
+}
+
+.content-container > a:hover {
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+.section-title {
+  width: 100%;
+  padding: 10px 0px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-top: solid 1px #555;
+}
+
+.section-title:hover {
+  animation-name: glow-secondary;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+.music-link {
+  background: white;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.music-link:hover {
+  animation: glow 1s forwards;
+}
+
+@keyframes glow-secondary {
+  from {
+    box-shadow: 0px 50px 300px 10px #007;
+  }
+  to {
+    box-shadow: 0px 100px 500px 10px #007;
+  }
+}
